@@ -1,0 +1,3 @@
+[submodule "chef"]
+	path = chef
+	url = git@github.com:euonymus-prod/gluons_chef.git
