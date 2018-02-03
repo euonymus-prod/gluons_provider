@@ -4,3 +4,6 @@
 [submodule "src/lampapp"]
 	path = src/lampapp
 	url = git@github.com:euonymus-prod/gluons.git
+[submodule "src/secrets"]
+	path = src/secrets
+	url = git@bitbucket.org:euonymusprod/gluons_secrets.git
