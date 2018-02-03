@@ -1,9 +1,12 @@
 [submodule "chef"]
 	path = chef
 	url = git@github.com:euonymus-prod/gluons_chef.git
+	ignore = dirty
 [submodule "src/lampapp"]
 	path = src/lampapp
 	url = git@github.com:euonymus-prod/gluons.git
+	ignore = dirty
 [submodule "src/secrets"]
 	path = src/secrets
 	url = git@bitbucket.org:euonymusprod/gluons_secrets.git
+	ignore = dirty
