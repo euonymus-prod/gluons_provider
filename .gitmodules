@@ -1,3 +1,6 @@
 [submodule "chef"]
 	path = chef
 	url = git@github.com:euonymus-prod/gluons_chef.git
+[submodule "src/lampapp"]
+	path = src/lampapp
+	url = git@github.com:euonymus-prod/gluons.git
