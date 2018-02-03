@@ -32,17 +32,31 @@ place your own /src/hosts/host_settings.rb file with following format
 
 * src/hosts
 
-# Prepare cookbooks
+# Prepare chef
 
     $ cd {path_to_this_repo}/chef
+    $ git checkout master
     $ berks vendor cookbooks
+    $ git submodule init
+    $ git submodule update
+
+# Prepare cookbooks
+
+    $ cd {path_to_this_repo}/chef/site-cookbooks/lamp
+    $ git checkout master
+    $ cd {path_to_this_repo}/chef/site-cookbooks/cakephp
+    $ git checkout master
+
+
+# Prepare the secrets' submodules
+
+    $ cd {path_to_this_repo}/src/lampapp
+    $ git checkout master
 
 # Prepare the application's submodules
 
     $ cd {path_to_this_repo}/src/lampapp
     $ git checkout master
-    $ git submodule init
-    $ git submodule update
 
 # Prepare the application source
 
