@@ -100,8 +100,8 @@ Vagrant.configure("2") do |config|
       recipe[postfix]
       recipe[lamp]
       recipe[cakephp]
+      recipe[gluons]
     ]
-      # recipe[gluons]
       # recipe[iptables]
   end
   # config.omnibus.chef_version = :latest
