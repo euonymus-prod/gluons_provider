@@ -15,6 +15,11 @@ Vagrant.configure("2") do |config|
   # # Every Vagrant development environment requires a box. You can search for
   # # boxes at https://atlas.hashicorp.com/search.
   config.vm.box = "ubuntu16_04_x64"
+
+  config.vm.provider "virtualbox" do |vb|
+     vb.customize [ "modifyvm", :id, "--uartmode1", "disconnected" ]
+  end
+
   config.vm.network "private_network", ip: "192.168.33.10"
 
   config.vm.synced_folder "./src/lampapp", "/var/www/lampapp", id: "vagrant-root",
