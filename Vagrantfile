@@ -36,6 +36,7 @@ Vagrant.configure("2") do |config|
     vb.image = 'ubuntu-16-04-x64'
     vb.region = 'sgp1'
     vb.size = 's-1vcpu-1gb'
+    vb.ipv6 = true
   end
   ENV['VAGRANT_DEFAULT_PROVIDER'] = 'digital_ocean'
 
